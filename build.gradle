@@ -1,0 +1,54 @@
+plugins {
+  id 'scala'
+  id 'maven'
+  id 'com.palantir.graal' version '0.7.2'
+}
+
+wrapper {
+  gradleVersion = '6.8'
+}
+
+ext.SCALA_VERSION = '2.12'
+ext.SCALA_VERSION_MINOR = '11'
+
+group 'com.example'
+sourceCompatibility = 1.11
+targetCompatibility = 1.11
+
+repositories {
+  mavenLocal()
+  mavenCentral()
+}
+
+dependencies {
+  // Scala
+  implementation "org.scala-lang:scala-library:${SCALA_VERSION}.${SCALA_VERSION_MINOR}"
+
+  // Elastic
+  implementation 'org.elasticsearch.client:elasticsearch-rest-high-level-client:6.8.13'
+
+  // Testing
+  testImplementation 'junit:junit:4.13.1'
+  testImplementation "org.scalatest:scalatest_${SCALA_VERSION}:3.0.9"
+}
+
+test {
+  jvmArgs = ['-agentlib:native-image-agent=config-output-dir=src/graal']
+}
+
+graal {
+  mainClass 'com.example.app.EntryPoint'
+  outputName 'graalvm-es-native'
+  graalVersion '21.0.0'
+  javaVersion '11'
+  option '--static'
+  option '--no-server'
+  option '--no-fallback'
+  option '--enable-https'
+  option '--enable-url-protocols=http,https'
+  option '--enable-all-security-services'
+  option '-H:+AllowIncompleteClasspath'
+  option '-H:ResourceConfigurationFiles=src/graal/resource-config.json'
+  option '-H:ReflectionConfigurationFiles=src/graal/reflect-config.json'
+  option '-H:JNIConfigurationFiles=src/graal/jni-config.json'
+}

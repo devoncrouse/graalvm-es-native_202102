@@ -1,0 +1,7 @@
+[
+  ["org.gradle.api.internal.tasks.testing.TestClassProcessor"],
+  ["org.gradle.api.internal.tasks.testing.TestResultProcessor","org.gradle.internal.concurrent.ThreadSafe"],
+  ["org.gradle.api.internal.tasks.testing.junit.TestClassExecutionListener","org.gradle.internal.concurrent.ThreadSafe"],
+  ["org.gradle.internal.logging.events.OutputEventListener"],
+  ["org.gradle.process.internal.worker.child.WorkerLoggingProtocol","org.gradle.internal.concurrent.ThreadSafe"]
+]

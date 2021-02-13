@@ -1,0 +1,115 @@
+[
+{
+  "name":"com.example.app.EntryPointTest",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true,
+  "allPublicConstructors":true
+},
+{
+  "name":"java.lang.Object",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true
+},
+{
+  "name":"java.lang.String"
+},
+{
+  "name":"java.lang.Thread",
+  "methods":[{"name":"getContextClassLoader","parameterTypes":[] }]
+},
+{
+  "name":"java.lang.invoke.MethodHandle"
+},
+{
+  "name":"java.util.HashSet"
+},
+{
+  "name":"java.util.LinkedHashSet"
+},
+{
+  "name":"org.apache.commons.logging.LogFactory"
+},
+{
+  "name":"org.apache.commons.logging.impl.Jdk14Logger",
+  "methods":[{"name":"<init>","parameterTypes":["java.lang.String"] }]
+},
+{
+  "name":"org.apache.commons.logging.impl.Log4JLogger"
+},
+{
+  "name":"org.apache.commons.logging.impl.LogFactoryImpl",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.apache.commons.logging.impl.WeakHashtable",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.gradle.api.internal.tasks.testing.TestClassRunInfo"
+},
+{
+  "name":"org.gradle.api.internal.tasks.testing.junit.AbstractJUnitSpec"
+},
+{
+  "name":"org.gradle.api.internal.tasks.testing.junit.JUnitSpec"
+},
+{
+  "name":"org.gradle.api.internal.tasks.testing.junit.JUnitTestFramework$TestClassProcessorFactoryImpl"
+},
+{
+  "name":"org.gradle.api.internal.tasks.testing.worker.RemoteTestClassProcessor",
+  "methods":[
+    {"name":"processTestClass","parameterTypes":["org.gradle.api.internal.tasks.testing.TestClassRunInfo"] }, 
+    {"name":"startProcessing","parameterTypes":[] }, 
+    {"name":"stop","parameterTypes":[] }
+  ]
+},
+{
+  "name":"org.gradle.api.internal.tasks.testing.worker.TestWorker"
+},
+{
+  "name":"org.gradle.api.internal.tasks.testing.worker.TestWorker$TestFrameworkServiceRegistry",
+  "allDeclaredMethods":true
+},
+{
+  "name":"org.gradle.internal.logging.services.LoggingServiceRegistry",
+  "allDeclaredMethods":true
+},
+{
+  "name":"org.gradle.internal.logging.services.LoggingServiceRegistry$CommandLineLogging",
+  "allDeclaredMethods":true
+},
+{
+  "name":"org.gradle.internal.nativeintegration.filesystem.services.FileSystemServices",
+  "allDeclaredMethods":true
+},
+{
+  "name":"org.gradle.internal.nativeintegration.services.NativeServices",
+  "allDeclaredMethods":true
+},
+{
+  "name":"org.gradle.internal.remote.services.MessagingServices",
+  "allDeclaredMethods":true
+},
+{
+  "name":"org.gradle.internal.service.MethodHandleBasedServiceMethodFactory",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker",
+  "methods":[{"name":"<init>","parameterTypes":["java.io.DataInputStream"] }]
+},
+{
+  "name":"org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker$WorkerServices",
+  "allDeclaredMethods":true
+},
+{
+  "name":"org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker$WorkerServices$1",
+  "allDeclaredMethods":true
+},
+{
+  "name":"org.scalatestplus.junit.JUnitSuite",
+  "allDeclaredFields":true,
+  "allDeclaredMethods":true
+}
+]
